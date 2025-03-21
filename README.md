@@ -8,14 +8,14 @@
   # Otomata - E (Ilham Gurat Adillion) Tugas 3
 
   ## Penjelasan Algoritma
-    1. masukkan start_status ke dalam path.
-    2. cek test_string per index.
-    3. pilih state yang sesuai dengan current_state, lalu pilih alphabet yang sesuai dengan test_string yang sedangk di akses. jika ada perbarui current_state dan path. jika tidak ada maka outputkan:
-    ```
-    Path: xxx
-    Status: REJECTED
-    ```
-    4. ulangi step ke 3 hingga test_string mencapai \0 dan outputkan path dan Status: ACCEPTED apabila path paling kanan/bawah == accepted state dan Status: Rejected apabila path paling kanan/bawah != accepted state.
+  1. Masukkan start_state ke dalam path.
+  2. cek test_string per index.
+  3. Pilih state yang sesuai dengan current_state, lalu pilih alphabet yang sesuai dengan test_string yang sedang di akses. jika ada perbarui current_state dan path. jika tidak ada maka outputkan:
+```
+path: xxx
+Status: REJECTED
+```
+  4. Ulangi step ke 3 hingga test_string mencapai \0 dan outputkan path dan Status: ACCEPTED apabila path paling kanan/bawah == accepted state dan Status: Rejected apabila path paling kanan/bawah != accepted state.
     ```
     Path: xxx -> xxx ...
     Status: ACCEPTED/REJECTED
@@ -75,5 +75,9 @@ cout << endl;
 bool result = (find(accept_states.begin(), accept_states.end(), current_state) != accept_states.end());
 cout << "Status: " << (result ? "ACCEPTED" : "REJECTED") << endl;
 ```
-
+## Cara Compile dan Run
+```
+g++ -std=c++17 DFA.cpp -o output
+./output
+```
       
