@@ -40,7 +40,16 @@ int main(){
             current_state = transitions[current_state][input_str];
             Path.push_back(current_state);
         } else {
-            cout << "Invalid transition" << endl;
+            cout << "Path: ";
+            for (int i = 0; i < Path.size(); i++) {
+                cout << Path[i];
+                if (i < Path.size() - 1) cout << " -> ";
+            }
+
+            cout << endl;
+
+            bool result = (find(accept_states.begin(), accept_states.end(), current_state) != accept_states.end());
+            cout << "Status: " << (result ? "ACCEPTED" : "REJECTED") << endl;
             return 1;
         }
     }
