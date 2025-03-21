@@ -16,10 +16,10 @@ path: xxx
 Status: REJECTED
 ```
   4. Ulangi step ke 3 hingga test_string mencapai \0 dan outputkan path dan Status: ACCEPTED apabila path paling kanan/bawah == accepted state dan Status: Rejected apabila path paling kanan/bawah != accepted state.
-    ```
-    Path: xxx -> xxx ...
-    Status: ACCEPTED/REJECTED
-    ```
+```
+Path: xxx -> xxx ...
+Status: ACCEPTED/REJECTED
+```
   ## Penjelasan Source Code
   1. gunakan header `<nlohmann/json.hpp>` untuk library JSON dan `<fstream>` untuk membaca file JSON
   2. `ifstream file("tes.json");` untuk membaca file JSON
