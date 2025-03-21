@@ -10,6 +10,8 @@
   ## Penjelasan Algoritma
     1. masukkan start_status ke dalam path.
     2. cek test_string per index.
-    3. pilih state yang sesuai dengan current_state, lalu pilih alphabet yang sesuai dengan test_string yang sedangk di akses. jika ada perbarui current_state dan     path. jika tidak ada outputkan:
-    4. ulangi step ke 3 hingga test_string mencapai \0 dan outputkan:
+    3. pilih state yang sesuai dengan current_state, lalu pilih alphabet yang sesuai dengan test_string yang sedangk di akses. jika ada perbarui current_state dan path. jika tidak ada maka outputkan path dan Status: REJECTED
+    4. ulangi step ke 3 hingga test_string mencapai \0 dan outputkan path dan Status: ACCEPTED apabila path paling kanan/bawah == accepted state dan Status: Rejected apabila path paling kanan/bawah != accepted state.
   ## Penjelasan Source Code
+  1. gunakan header '<nlohmann/json.hpp>'
+      
