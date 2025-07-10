@@ -5,7 +5,7 @@
   | Indhira Ayu Puspita Ningrum | 5025231316 |
   | Imelda Alexis Jovita  | 5025231032 |
   
-  # Otomata - E (Ilham Gurat Adillion) Tugas 3
+  # Otomata - E Tugas 3
 
   ## Penjelasan Algoritma
   1. Masukkan start_state ke dalam path.
